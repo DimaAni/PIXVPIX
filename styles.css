@@ -1,0 +1,116 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+  /* Стили для каждой страницы */
+  /* Главная страница */
+#home h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+  /* Страница Услуги */
+#services {
+    background-color: #f9f9f9;
+}
+
+  /* Портфолио */
+#portfolio .portfolio-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+  /* О нас */
+#about p {
+    font-size: 1.2em;
+}
+
+  /* Контакты */
+#contact .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact-form input[type="text"], #contact .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#contact .contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact .contact-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+  /* Блог */
+#blog .blog-post {
+border-bottom: 1px solid #ccc;
+padding: 20px 0;
+margin: 20px 0;
+}
+
+  /* Респонсивные стили */
+@media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    }
+
+    nav ul li {
+    display: block;
+    }
+}
